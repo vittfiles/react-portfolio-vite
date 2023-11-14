@@ -32,7 +32,7 @@ function Examples() {
 
     return ( <section className='text-start col-start-1 col-span-5 flex flex-wrap'>
         <header className='text-start p-4 bg-white w-full rounded-lg'>
-            <h2 className='text-black-400 font-medium text-lg pb-5'>{examples.title} projects ({examples.ej.length})</h2>
+            <h2 className='text-black-400 font-medium text-lg pb-5'>{examples?.title} projects ({examples?.ej?.length})</h2>
             <nav className='pb-2 flex flex-wrap'>
                 {proj.map(el => {return (<NavLink className={({ isActive }) => isActive ? activeClass : defClass} to={'/'+el.id+'?nav=1'} key={el.id} >{el.title}</NavLink>)})}
             </nav>
