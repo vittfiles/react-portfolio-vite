@@ -5,12 +5,12 @@ function Info() {
     return ( <div className='sm:pl-4 text-left font-medium'>
         <header className='pb-4 flex flex-col sm:flex-row justify-between'>
             <div className='pt-6 sm:pt-0'>
-                <p className='text-black-300 text-2xl font-semibold'>Billie Pearson</p>
+                <p className='text-black-300 text-2xl font-semibold'>Matias Martinez</p>
                 <p className='text-black-200 text-lg'>Front-end developer</p>
             </div>
             <div className='pt-4 sm:pt-0'>
                 <p className='text-black-300 text-lg flex items-center'><span className='pr-1 text-2xl'><HiMail /></span>billi@example.com</p>
-                <p className='text-black-300 text-lg flex items-center'><span className='pr-1 text-2xl'><HiPhone /></span>(+503) 546 624 342</p>
+                <p className='text-black-300 text-lg flex items-center'><span className='pr-1 text-2xl'><HiPhone /></span>(+503) 123 456 789</p>
             </div>
         </header>
         <p className='text-black-200 text-lg'>Self-motivated feveloper, who is willing to learn and create outstanding UI applications.</p>
