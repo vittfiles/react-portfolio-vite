@@ -1,5 +1,27 @@
 export const proj = [
     {
+        id: 'angular',
+        title: 'Angular',
+        ej: [
+            {
+                title: 'Social network',
+                img: 'img/social-network.jpeg',
+                tags: ['Angular', 'Tailwind', 'Typescript', 'responsive'],
+                info: 'A social media web designed to upload images and comments, create a fake user and try it',
+                demo: "https://vittfiles.github.io/angular-social-network/",
+                code: "https://github.com/vittfiles/angular-social-network/"
+            },
+            {
+                title: 'Yugioh FMR',
+                img: 'img/yugiohfmr.jpeg',
+                tags: ['Angular', 'SASS', 'Typescript', 'responsive'],
+                info: 'In this project, I work with Angular to create a deck creator for Yugioh Forbidden memories',
+                demo: "https://vittfiles.github.io/yugiohfmr/",
+                code: "https://github.com/vittfiles/yugiohfmr"
+            },
+        ],
+    },
+    {
         id: 'responsive',
         title: 'Responsive',
         ej: [
@@ -69,20 +91,6 @@ export const proj = [
             },
         ],
         
-    },
-    {
-        id: 'angular',
-        title: 'Angular',
-        ej: [
-            {
-                title: 'Yugioh FMR',
-                img: 'img/yugiohfmr.jpeg',
-                tags: ['Angular', 'SASS', 'Typescript', 'responsive'],
-                info: 'In this project, I work with Angular to create a deck creator for Yugioh Forbidden memories',
-                demo: "https://vittfiles.github.io/yugiohfmr/",
-                code: "https://github.com/vittfiles/yugiohfmr"
-            },
-        ],
     },
     {
         id: 'react',

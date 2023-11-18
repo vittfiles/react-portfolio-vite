@@ -3,7 +3,7 @@ import { HiMail, HiPhone } from 'react-icons/hi';
 
 function Info() {
     return ( <div className='sm:pl-4 text-left font-medium'>
-        <header className='pb-4 flex flex-col sm:flex-row justify-between'>
+        <header className='pb-4 flex flex-col items-center sm:flex-row justify-between'>
             <div className='pt-6 sm:pt-0'>
                 <p className='text-black-300 text-2xl font-semibold'>Matias Martinez</p>
                 <p className='text-black-200 text-lg'>Front-end developer</p>
