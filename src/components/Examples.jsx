@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { NavLink, useLocation, useNavigate, useParams  } from 'react-router-dom';
 import ExampleCard from './ExampleCard';
 import { IoIosArrowBack,IoIosArrowForward } from 'react-icons/io';
 import { proj } from '../db/data';
 
 function Examples() {
-    let defClass = ' font-medium text-sm text-black-400 px-5 py-2 border-2 border-black-400 rounded-xl mr-4';
+    const ref = useRef(null);
+
+    let defClass = ' font-medium text-sm text-black-400 px-5 py-2 border-2 border-black-400 rounded-xl mr-4 mb-4';
     let activeClass = defClass+' bg-blues text-white border-blues';
 
     const {ej} = useParams();
@@ -15,6 +17,7 @@ function Examples() {
     let search = location.search;
     let query = new URLSearchParams(search);
     let nav = parseInt(query.get('nav')) || 1;
+
     useEffect(() => {
         if(location.pathname === "/"){
             console.log(location);
@@ -28,10 +31,13 @@ function Examples() {
         for (let i = 0; i < examples.ej.length; i += size)
         arrays.push(examples.ej.slice(i, i + size));
     }
-    const handleClick = (newNav) => navigate(location.pathname+'?nav='+newNav);
+    const handleClick = (newNav) => {
+        ref.current?.scrollIntoView({behavior: 'smooth'});
+        navigate(location.pathname+'?nav='+newNav);
+    };
 
     return ( <section className='text-start col-start-1 col-span-5 flex flex-wrap'>
-        <header className='text-start p-4 bg-white w-full rounded-lg'>
+        <header ref={ref} className='text-start pt-4 px-4 bg-white w-full rounded-lg'>
             <h2 className='text-black-400 font-medium text-lg pb-5'>{examples?.title} projects ({examples?.ej?.length})</h2>
             <nav className='pb-2 flex flex-wrap'>
                 {proj.map(el => {return (<NavLink className={({ isActive }) => isActive ? activeClass : defClass} to={'/'+el.id+'?nav=1'} key={el.id} >{el.title}</NavLink>)})}

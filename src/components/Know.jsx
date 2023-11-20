@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Bar from './Bar';
 
-const list = [
-    {id:"bar-react",title: "React",value: "w-4/5"},
-    {id:"bar-css",title: "CSS",value: "w-11/12"},
-    {id:"bar-javascript",title: "Javascript",value: "w-11/12"},
-    {id:"bar-vue",title: "Vue",value: "w-0"},
-    {id:"bar-reactnative",title: "React Native",value: "w-0"},
-    {id:"bar-redux",title: "Redux",value: "w-1/2"},
-];
 
-function Know({title}) {
+function Know({title, list}) {
     useEffect(() => {
         list.forEach(el => activarAnimacion(el));
         window.addEventListener('scroll', function() {

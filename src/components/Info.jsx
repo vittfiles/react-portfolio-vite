@@ -13,8 +13,8 @@ function Info() {
                 <p className='text-black-300 text-lg flex items-center'><span className='pr-1 text-2xl'><HiPhone /></span>(+503) 123 456 789</p>
             </div>
         </header>
-        <p className='text-black-200 text-lg'>Self-motivated feveloper, who is willing to learn and create outstanding UI applications.</p>
-        <p className='text-black-200 text-lg'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse voluptas laboriosam aperia</p>
+        <p className='text-black-200 text-lg'>I am an Computer Engineering student with years of experience developing my own programming projects.</p>
+        <p className='text-black-200 text-lg'>I consider myself detail-oriented and dedicated when undertaking each project.</p>
     </div> );
 }
 
