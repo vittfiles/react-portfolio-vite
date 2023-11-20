@@ -19,9 +19,9 @@ function App() {
 ];
 const list2 = [
   {id:"bar-git",title: "Git",value: "w-9/12"},
+  {id:"bar-express",title: "Express",value: "w-11/12"},
   {id:"bar-wordpress",title: "Wordpress",value: "w-9/12"},
   {id:"bar-php",title: "PHP",value: "w-4/6"},
-  {id:"bar-java",title: "java",value: "w-4/6"},
   {id:"bar-sql",title: "SQL",value: "w-4/6"},
   {id:"bar-mongodb",title: "MongoDB",value: "w-3/6"},
 ];
