@@ -3,7 +3,7 @@ import Bar from './Bar';
 
 
 function Know({title, list}) {
-    useEffect(() => {
+    /* useEffect(() => {
         list.forEach(el => activarAnimacion(el));
         window.addEventListener('scroll', function() {
             list.forEach(el => activarAnimacion(el));
@@ -13,6 +13,19 @@ function Know({title, list}) {
             var htmlPos = bar.getBoundingClientRect();
             if(htmlPos.top >= 0 && htmlPos.bottom <= window.innerHeight) {
                 bar.querySelector("div").classList.add(el.value);
+            }
+        }
+    }, []); */
+    useEffect(() => {
+        list.forEach(el => activarAnimacion(el));
+        window.addEventListener('scroll', function() {
+            list.forEach(el => activarAnimacion(el));
+        });
+        function activarAnimacion(el){
+            let bar =document.getElementById(el.id);
+            var htmlPos = bar.getBoundingClientRect();
+            if(htmlPos.top >= 0 && htmlPos.bottom <= window.innerHeight) {
+                bar?.classList?.add("animate");
             }
         }
     }, []);
