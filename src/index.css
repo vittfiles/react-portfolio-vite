@@ -13,48 +13,31 @@
 .btn-blue:hover {
     @apply bg-blue-700;
 }
+
 .check-svg .check{
-    stroke-dasharray: 0, 75px;
+    stroke-dasharray: 75px;
+    stroke-dashoffset: 75px;
 }
 .check-svg.animate .check{
     animation: 1s cubic-bezier(0.65, 0, 1, 1) forwards check;
 }
 
 @keyframes check {
-    from {
-      stroke-dasharray: 0, 75px;
-    }
     to {
-      stroke-dasharray: 75px, 75px;
+      stroke-dashoffset: 0px;
     }
 }
 
 .check-svg .box {
-    stroke-dasharray: 0px, 75px, 75px;
+    stroke-dasharray: 75px;
+    stroke-dashoffset: -75px;
 }
 .check-svg.animate .box {
     animation: 1s cubic-bezier(0.65, 0, 1, 1) forwards box;
 }
 
 @keyframes box {
-    from {
-      stroke-dasharray: 0px, 75px, 75px;
-    }
-    to {
-      stroke-dasharray: 0px, 0px, 75px;
-    }
-}
-
-.check-svg .box2 {
-    stroke-dasharray: 0px, 75px;
-}
-.check-svg.animate .box2{
-    animation: 1s linear forwards box2;
-}
-
-@keyframes box2 {
-    from {}
-    to {
-        visibility: hidden;
+    to{
+        stroke-dashoffset: 0px;
     }
 }

@@ -1,11 +1,22 @@
-import React from 'react';
+import React, {  useEffect } from 'react';
 
-function Bar({id, title, value}) {
+function Check({id, title, value}) {
+    useEffect(() => {
+        activarAnimacion()
+        window.addEventListener('scroll', function() {
+            activarAnimacion();
+        });
+        function activarAnimacion(){
+            let bar = document.getElementById(id);
+            var htmlPos = bar.getBoundingClientRect();
+            if(htmlPos.top >= 0 && htmlPos.bottom <= window.innerHeight) {
+                bar?.classList?.add("animate");
+            }
+        }
+    }, []);
+
     return ( <li className='flex items-center justify-between py-1'>
         <span className='w-1/2 text-base font-medium text-300'>{title}</span>
-        {/* <div id={id} className={'w-1/2 h-3 border-2 rounded-full'} value={value}>
-            <div className={'w-0 h-2 rounded-full bg-blues transition transition-all ease-in-out duration-1000'}></div>
-        </div> */}
         <svg id={id} xmlns="http://www.w3.org/2000/svg" width="22" height="20" className="check-svg">
             <g fill="none" fillRule="evenodd" stroke="#2F80ED" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3">
                 <path className="check" d="m7 9 3 3L21 1"></path>
@@ -15,4 +26,4 @@ function Bar({id, title, value}) {
     </li> );
 }
 
-export default Bar;
+export default Check;
