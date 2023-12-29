@@ -97,6 +97,14 @@ export const proj = [
         title: 'React',
         ej: [
             {
+                title: 'Cuevanarg',
+                img: 'img/cuevanarg.webp',
+                tags: ['React', 'Tailwind', 'Javascript', 'responsive','API'],
+                info: 'In this project, I work with React and Tailwind to show movie data using the API The Movie Database',
+                demo: "https://vittfiles.github.io/alkemy-challenge-react/",
+                code: "https://github.com/vittfiles/alkemy-challenge-react"
+            },
+            {
                 title: 'Portfolio',
                 img: 'img/portfolio.jpeg',
                 tags: ['React', 'Tailwind', 'Javascript', 'responsive'],
