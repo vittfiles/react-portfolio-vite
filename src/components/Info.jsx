@@ -10,26 +10,26 @@ function Info() {
           <p className="text-black-300 text-2xl font-semibold">
             Matias Martinez
           </p>
-          <p className="text-black-200 text-lg">Front-end developer</p>
+          <p className="text-black-200 text-lg">Front-end/Back-end developer</p>
         </div>
         <div className="pt-4 sm:pt-0">
           <a
             href="www.linkedin.com/in/matias-m-79b5652a0"
-            className="text-black-300 text-lg flex items-center"
+            className="text-black-300 text-lg flex items-center hover:text-blues"
           >
             <span className="pr-1 text-2xl">
               <FaLinkedin />
             </span>
-            Linkedin
+            Linkedin.com
           </a>
           <a
             href="https://www.freelancer.com/u/vittfiles"
-            className="text-black-300 text-lg flex items-center"
+            className="text-black-300 text-lg flex items-center hover:text-blues"
           >
             <span className="pr-1 text-2xl">
               <SiFreelancer />
             </span>
-            freelancer
+            freelancer.com
           </a>
         </div>
       </header>
