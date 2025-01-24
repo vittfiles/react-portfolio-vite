@@ -14,7 +14,7 @@ function Info() {
         </div>
         <div className="pt-4 sm:pt-0">
           <a
-            href="www.linkedin.com/in/matias-m-79b5652a0"
+            href="https://www.linkedin.com/in/matias-m-79b5652a0"
             className="text-black-300 text-lg flex items-center hover:text-blues"
           >
             <span className="pr-1 text-2xl">
